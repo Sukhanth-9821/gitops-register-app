@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: register-app
-          image: sukhanth/registerapp:latest
+          image: sukhanth/registerapp:1.0
           resources:
             limits:
               memory: "256Mi"

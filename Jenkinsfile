@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh """
                    cat deployment.yaml
-                   sed -i 's/${APP_NAME}.*/${APP_NAME}:${IMAGE_TAG}/g' deployment.yaml
+                   sed -i 's|sukhanth/registerapp:latest|sukhanth/registerapp:${IMAGE_TAG}|g' deployment.yaml
                    cat deployment.yaml
                 """
             }
